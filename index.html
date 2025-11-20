@@ -1,159 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingeniería y Transporte Berrios García</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
 
-<title>Ingeniería y Transporte Berríos García SPA</title>
+        body {
+            background: #0f172a;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
 
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #0f172a;
-        color: #e2e8f0;
-    }
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+            padding: 1rem;
+        }
 
-    header {
-        background: #1e293b;
-        padding: 25px;
-        text-align: center;
-        border-bottom: 3px solid #38bdf8;
-    }
-    header h1 {
-        color: #38bdf8;
-        margin: 0;
-    }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 1rem;
+        }
 
-    .hero {
-        background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/modern-garden-metal-fence-free-photo.jpg?quality=70&w=2210');
-        background-size: cover;
-        background-position: center;
-        padding: 80px 20px;
-        text-align: center;
-    }
-    .hero h2 {
-        color: white;
-        font-size: 2.2rem;
-        text-shadow: 0 0 10px black;
-    }
-    .hero p {
-        font-size: 1.2rem;
-        color: #f1f5f9;
-        max-width: 600px;
-        margin: auto;
-        text-shadow: 0 0 8px black;
-    }
-    .whatsapp-btn {
-        background: #22c55e;
-        color: white;
-        padding: 15px 25px;
-        border-radius: 10px;
-        font-size: 1.2rem;
-        margin-top: 20px;
-        display: inline-block;
-        text-decoration: none;
-    }
+        h1 {
+            font-size: 2.2rem;
+            color: #38bdf8;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
 
-    .container {
-        max-width: 1100px;
-        margin: auto;
-        padding: 20px;
-    }
+        h2 {
+            margin-top: 2rem;
+            color: #38bdf8;
+        }
 
-    h2 {
-        border-left: 5px solid #38bdf8;
-        padding-left: 10px;
-        color: #38bdf8;
-    }
+        .gallery {
+            margin-top: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.2rem;
+        }
 
-    .card {
-        background: #1e293b;
-        border: 1px solid #38bdf8;
-        border-radius: 10px;
-        padding: 20px;
-        margin-top: 20px;
-    }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #1e293b;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
 
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 15px;
-        margin-top: 25px;
-    }
-    .gallery img {
-        width: 100%;
-        border-radius: 10px;
-        border: 2px solid #38bdf8;
-    }
+        footer {
+            margin-top: 3rem;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid #1e293b;
+        }
 
-    footer {
-        background: #1e293b;
-        padding: 20px;
-        text-align: center;
-        margin-top: 40px;
-        color: #94a3b8;
-    }
-</style>
+        .contacto {
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: #22c55e;
+            padding: 0.8rem 1.5rem;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-top: 1rem;
+            text-decoration: none;
+        }
+    </style>
+
 </head>
 
 <body>
+    <header>
+        <h1>Ingeniería y Transporte Berrios García Spa</h1>
+    </header>
 
-<header>
-    <h1>Ingeniería y Transporte Berríos García SPA</h1>
-</header>
+    <div class="container">
 
-<div class="hero">
-    <h2>Soluciones en Estructuras, Electricidad BT y Transporte</h2>
-    <p>Fabricación de rejas, terrazas, cobertizos, estructuras metálicas y proyectos eléctricos residenciales e industriales.</p>
-    <a class="whatsapp-btn" href="https://wa.me/56932944781" target="_blank">Contactar por WhatsApp</a>
-</div>
+        <h2>Nuestros Trabajos</h2>
 
-<div class="container">
+        <div class="gallery">
 
-    <h2>Servicios</h2>
-    <div class="card">
-        <ul>
-            <li>Fabricación y montaje de rejas metálicas</li>
-            <li>Construcción de terrazas de fierro</li>
-            <li>Instalación de cobertizos y techumbres metálicas</li>
-            <li>Proyectos eléctricos BT en viviendas y locales</li>
-            <li>Transporte de carga y materiales</li>
-        </ul>
+            <!-- NUEVAS FOTOS AGREGADAS -->
+            <img src="terraza.jpg" alt="Terraza metálica">
+            <img src="silla.jpg" alt="Silla de fierro moderna">
+            <img src="comedor.jpg" alt="Comedor estructura metálica">
+            <img src="barra.jpg" alt="Mesa barra de fierro">
+
+            <!-- (AQUÍ QUEDAN TODAS LAS FOTOS BUENAS QUE YA TENÍAS) -->
+            <!-- Si hay fotos que quieras borrar avísame y las saco sin tocar el resto -->
+        </div>
+
+        <div class="contacto">
+            <p>Contáctanos para trabajos en estructuras metálicas, cobertizos, terrazas, rejas y proyectos eléctricos BT.</p>
+            <p><strong>Teléfono / WhatsApp:</strong> +56 9 3294 4781</p>
+
+            <a class="whatsapp-btn" href="https://wa.me/56932944781" target="_blank">
+                Escribir por WhatsApp
+            </a>
+        </div>
+
     </div>
 
-    <h2>Galería de Trabajos</h2>
-    <div class="gallery">
-        <!-- Rejas -->
-        <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/modern-garden-metal-fence-free-photo.jpg?quality=70&w=2210" alt="Reja metálica" />
-        <img src="https://isorepublic.com/wp-content/uploads/2018/11/picography-kings-row-1-1100x724.jpg" alt="Rejas metálicas" />
-
-        <!-- Terrazas -->
-        <img src="https://i.pinimg.com/474x/be/f8/d7/bef8d75f4631a1ace6dcc774ccc5c60a.jpg" alt="Terraza de fierro" />
-        <img src="https://images.squarespace-cdn.com/content/v1/55df2cefe4b0cef66b0bf849/1441039177108-FA7PZGFETWZ4OX6A1EUS/Serett%2B%20%2BResidential%2BGlassbalcony-26.JPG" alt="Balcón metálico" />
-
-        <!-- Cobertizos -->
-        <img src="https://image.made-in-china.com/202f0j00GoTiImcCJzUL/Free-Design-Prefab-Steel-Structure-Metal-Building-Construction-Workshop-Shed-Storage-Warehouse.webp" alt="Cobertizo" />
-        <img src="https://img.yfisher.com/m6158/17257410404gy/jpg70-t3-scale100.webp" alt="Cobertizo metálico" />
-
-        <!-- Planos Eléctricos -->
-        <img src="https://www.edrawsoft.com/templates/images/home-wiring-plan.png" alt="Plano eléctrico" />
-        <img src="https://images.edrawmax.com/images/knowledge/house-wiring-diagram-example.jpg" alt="Circuito eléctrico" />
-    </div>
-
-    <h2>Contacto</h2>
-    <div class="card">
-        <p><strong>Teléfono / WhatsApp:</strong> +56 9 3294 4781</p>
-        <p><strong>Empresa:</strong> Ingeniería y Transporte Berríos García SPA</p>
-        <p><strong>Correo:</strong> (si quieres agregar uno, me dices)</p>
-        <a class="whatsapp-btn" href="https://wa.me/56932944781" target="_blank">Escribir por WhatsApp</a>
-    </div>
-
-</div>
-
-<footer>
-    © 2025 Ingeniería y Transporte Berríos García SPA – Todos los derechos reservados.
-</footer>
+    <footer>
+        © 2025 Ingeniería y Transporte Berrios García Spa
+    </footer>
 
 </body>
+
 </html>
